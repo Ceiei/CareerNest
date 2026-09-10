@@ -1,0 +1,1253 @@
+{
+  "schemaVersion": 1,
+  "scenario": "campus_recruitment",
+  "companyId": "kuaishou",
+  "company": "快手",
+  "capturedAt": "2026-09-08",
+  "entryUrl": "https://campus.kuaishou.cn/recruit/campus/e/#/campus/index/",
+  "url": "https://campus.kuaishou.cn/recruit/campus/e/#/campus/resume",
+  "status": "observed_form",
+  "completeness": "partial",
+  "captureScope": "官网个人简历编辑；只读取标签和控件元数据；未保存或投递",
+  "limitations": [
+    "除明确列出的枚举外，下拉选项未完整展开",
+    "未执行网站保存或投递校验，不能视为自动填写适配已通过"
+  ],
+  "platformEvidence": "DOM ant-form-item / ant-select；所有九个可选经历区块均展开",
+  "attachments": [
+    {
+      "label": "简历附件",
+      "maxSizeMB": 20,
+      "formatText": "word、pdf、png等"
+    },
+    {
+      "label": "其他附件",
+      "maxSizeMB": 100,
+      "formatText": "word、pdf、png等"
+    }
+  ],
+  "fields": [
+    {
+      "id": "kuaishou-001",
+      "section": "基本信息",
+      "label": "姓名",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.fullName",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 1,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-002",
+      "section": "基本信息",
+      "label": "手机区号",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.phoneCountryCode",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 2,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-003",
+      "section": "基本信息",
+      "label": "手机",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.phone",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 3,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-004",
+      "section": "基本信息",
+      "label": "邮箱",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.email",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 4,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-005",
+      "section": "基本信息",
+      "label": "国家地区",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "personal.nationality",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 5,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-006",
+      "section": "基本信息",
+      "label": "证件类型",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.idType",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 6,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-007",
+      "section": "基本信息",
+      "label": "身份证件",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.idNumber",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 7,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "证件信息注册成功后不可修改；不自动填写"
+    },
+    {
+      "id": "kuaishou-008",
+      "section": "基本信息",
+      "label": "性别",
+      "kind": "radio",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [
+        {
+          "label": "男",
+          "value": "男"
+        },
+        {
+          "label": "女",
+          "value": "女"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "personal.gender",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 8,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-009",
+      "section": "基本信息",
+      "label": "出生日期",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.birthDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 9,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-010",
+      "section": "基本信息",
+      "label": "现居地",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "custom.currentCity",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 10,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-011",
+      "section": "基本信息",
+      "label": "招聘信息来源",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.recruitmentSource",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 11,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-012",
+      "section": "基本信息",
+      "label": "最高学历",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.highestDegree",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 12,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-013",
+      "section": "基本信息",
+      "label": "最高学历学校",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.highestSchool",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 13,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-014",
+      "section": "基本信息",
+      "label": "最高学历专业",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.highestMajor",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 14,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-015",
+      "section": "基本信息",
+      "label": "最高学历毕业日期",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "custom.highestGraduationDate",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 15,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-016",
+      "section": "基本信息",
+      "label": "紧急联系人",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.emergencyContact",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 16,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-017",
+      "section": "基本信息",
+      "label": "紧急联系人电话",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.emergencyPhone",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 17,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-018",
+      "section": "教育经历",
+      "label": "学历",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [
+        {
+          "label": "高中",
+          "value": "高中"
+        },
+        {
+          "label": "大专",
+          "value": "大专"
+        },
+        {
+          "label": "本科",
+          "value": "本科"
+        },
+        {
+          "label": "硕士研究生",
+          "value": "硕士研究生"
+        },
+        {
+          "label": "MBA/EMBA",
+          "value": "MBA/EMBA"
+        },
+        {
+          "label": "博士研究生",
+          "value": "博士研究生"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "education.0.degree",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 18,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-019",
+      "section": "教育经历",
+      "label": "起止时间／开始",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "education.0.startDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 19,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-020",
+      "section": "教育经历",
+      "label": "起止时间／结束",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "education.0.endDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 20,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-021",
+      "section": "教育经历",
+      "label": "学校",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "education.0.school",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 21,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "学校搜索无结果时可通过“这里添加”自定义"
+    },
+    {
+      "id": "kuaishou-022",
+      "section": "教育经历",
+      "label": "学院",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "education.0.department",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 22,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-023",
+      "section": "教育经历",
+      "label": "专业",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "education.0.major",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 23,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-024",
+      "section": "教育经历",
+      "label": "成绩排名",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "education.0.ranking",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 24,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-025",
+      "section": "教育经历",
+      "label": "实验室",
+      "kind": "text",
+      "required": false,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "education.0.laboratory",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 25,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-026",
+      "section": "教育经历",
+      "label": "导师姓名",
+      "kind": "text",
+      "required": false,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "education.0.advisor",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 26,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-027",
+      "section": "实习经历",
+      "label": "起止时间／开始",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "实习经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "experience.0.startDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 27,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-028",
+      "section": "实习经历",
+      "label": "起止时间／结束",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "实习经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "experience.0.endDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 28,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-029",
+      "section": "实习经历",
+      "label": "公司名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "实习经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "experience.0.company",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 29,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-030",
+      "section": "实习经历",
+      "label": "职位名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "实习经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "experience.0.position",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 30,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-031",
+      "section": "实习经历",
+      "label": "职责描述",
+      "kind": "textarea",
+      "required": false,
+      "occurrence": 0,
+      "context": "实习经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "experience.0.responsibilities",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 31,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-032",
+      "section": "实习经历",
+      "label": "工作业绩",
+      "kind": "textarea",
+      "required": false,
+      "occurrence": 0,
+      "context": "实习经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "experience.0.achievements",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 32,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-033",
+      "section": "项目经历",
+      "label": "起止时间／开始",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "项目经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "projects.0.startDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 33,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-034",
+      "section": "项目经历",
+      "label": "起止时间／结束",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "项目经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "projects.0.endDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 34,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-035",
+      "section": "项目经历",
+      "label": "项目名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "项目经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "projects.0.projectName",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 35,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-036",
+      "section": "项目经历",
+      "label": "职务",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "项目经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "projects.0.role",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 36,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-037",
+      "section": "项目经历",
+      "label": "项目职责",
+      "kind": "textarea",
+      "required": false,
+      "occurrence": 0,
+      "context": "项目经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "projects.0.responsibilities",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 37,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-038",
+      "section": "项目经历",
+      "label": "项目描述",
+      "kind": "textarea",
+      "required": false,
+      "occurrence": 0,
+      "context": "项目经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "projects.0.description",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 38,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-039",
+      "section": "论文",
+      "label": "论文名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "论文",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "publications.0.title",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 39,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-040",
+      "section": "论文",
+      "label": "发布渠道",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "论文",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "publications.0.venue",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 40,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-041",
+      "section": "论文",
+      "label": "作者顺序",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "论文",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "publications.0.role",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 41,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-042",
+      "section": "论文",
+      "label": "论文链接",
+      "kind": "text",
+      "required": false,
+      "occurrence": 0,
+      "context": "论文",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "publications.0.url",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 42,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-043",
+      "section": "语言能力",
+      "label": "语种",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_type",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 43,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-044",
+      "section": "语言能力",
+      "label": "听说能力",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_speaking",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 44,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-045",
+      "section": "语言能力",
+      "label": "读写能力",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_writing",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 45,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-046",
+      "section": "IT技能",
+      "label": "技能类别",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "IT技能",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.itSkill_0_type",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 46,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-047",
+      "section": "IT技能",
+      "label": "掌握程度",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "IT技能",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.itSkill_0_proficiency",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 47,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-048",
+      "section": "技能证书",
+      "label": "技能证书",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "技能证书",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "custom.certificate_0_name",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 48,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-049",
+      "section": "竞赛获奖",
+      "label": "竞赛名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "竞赛获奖",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "awards.0.awardName",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 49,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-050",
+      "section": "竞赛获奖",
+      "label": "竞赛获奖等级",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "竞赛获奖",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "awards.0.level",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 50,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-051",
+      "section": "竞赛获奖",
+      "label": "竞赛获奖时间",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "竞赛获奖",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "awards.0.date",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 51,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-052",
+      "section": "其他荣誉",
+      "label": "荣誉名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "其他荣誉",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "custom.honor_0_name",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 52,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-053",
+      "section": "作品信息",
+      "label": "作品名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "作品信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "custom.portfolio_0_name",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 53,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "kuaishou-054",
+      "section": "作品信息",
+      "label": "作品链接",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "作品信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "custom.portfolio_0_url",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/kuaishou.json",
+        "row": 54,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    }
+  ]
+}

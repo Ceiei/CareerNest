@@ -1,0 +1,5 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Career OS · 插件连接</title></head><body>
+<main><p class="eyebrow">CAREER OS / FILLING ASSISTANT</p><h1>连接桌面应用</h1><p>插件只读取资料并填写网页。所有资料统一在 Career OS 桌面应用维护。</p>
+<section><h2>首次配对</h2><ol><li>打开 Career OS 桌面应用。</li><li>在“设置与备份”生成插件配对码。</li><li>在下方输入配对码，完成一次连接。</li></ol>
+<form id="pair-form"><label>配对码<input id="pair-code" inputmode="numeric" autocomplete="off" maxlength="8" required pattern="[0-9]{8}" placeholder="8 位数字"></label><button id="pair" type="submit">连接</button></form><p id="status" role="status">正在检查连接…</p><button id="disconnect" type="button">断开连接</button></section>
+<p class="hint">关闭桌面应用后插件暂停读取。旧插件资料若尚未迁移，会作为候选发送到桌面应用，确认后才进入资料库。</p></main><script type="module" src="./main.ts"></script></body></html>

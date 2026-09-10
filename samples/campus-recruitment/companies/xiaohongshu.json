@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "scenario": "campus_recruitment",
+  "companyId": "xiaohongshu",
+  "company": "小红书",
+  "capturedAt": "2026-09-09",
+  "entryUrl": "https://job.xiaohongshu.com/campus",
+  "url": "https://job.xiaohongshu.com/campus/position/21212/apply",
+  "status": "observed_form",
+  "completeness": "partial",
+  "captureScope": "用户打开的1327 Agent实习生岗位申请表；已附简历后的联系、补充、教育信息阶段；未点击提交",
+  "limitations": [
+    "这是实习岗位的具体申请表，不代表2027正式校招、REDstar或其他岗位全部分支",
+    "仅采集表单元数据，不保存已上传简历名称、预览或填写值",
+    "未操作重新上传，不知道初始简历上传阶段的全部约束"
+  ],
+  "readOnlyFields": [
+    "手机号和国家地区选择为disabled"
+  ],
+  "attachments": [
+    {
+      "label": "作品或其他附件",
+      "required": false,
+      "maxSizeMB": 200,
+      "formats": [
+        "zip",
+        "rar",
+        "pdf",
+        "doc",
+        "docx",
+        "ppt",
+        "png",
+        "jpg",
+        "jpeg"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": "xiaohongshu-001",
+      "section": "联系信息",
+      "label": "姓名",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "联系信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "personal.fullName",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 1,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "xiaohongshu-002",
+      "section": "联系信息",
+      "label": "出生年月",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "联系信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.birthDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 2,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "YYYY-MM，需从完整出生日期提取年月"
+    },
+    {
+      "id": "xiaohongshu-003",
+      "section": "联系信息",
+      "label": "手机号",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "联系信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "personal.phone",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 3,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "disabled，已绑定账号只读"
+    },
+    {
+      "id": "xiaohongshu-004",
+      "section": "联系信息",
+      "label": "邮箱",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "联系信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "personal.email",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 4,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "xiaohongshu-005",
+      "section": "补充信息",
+      "label": "到岗时间",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "补充信息",
+      "options": [
+        {
+          "label": "1周内",
+          "value": "1周内"
+        },
+        {
+          "label": "2周内",
+          "value": "2周内"
+        },
+        {
+          "label": "1个月内",
+          "value": "1个月内"
+        },
+        {
+          "label": "3个月内",
+          "value": "3个月内"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "preferences.availability",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 5,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "xiaohongshu-006",
+      "section": "补充信息",
+      "label": "实习时长",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "补充信息",
+      "options": [
+        {
+          "label": "3个月以内",
+          "value": "3个月以内"
+        },
+        {
+          "label": "3-6个月",
+          "value": "3-6个月"
+        },
+        {
+          "label": "6个月以上",
+          "value": "6个月以上"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "preferences.internshipDuration",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 6,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "xiaohongshu-007",
+      "section": "补充信息",
+      "label": "每周出勤",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "补充信息",
+      "options": [
+        {
+          "label": "5天",
+          "value": "5天"
+        },
+        {
+          "label": "4天",
+          "value": "4天"
+        },
+        {
+          "label": "3天",
+          "value": "3天"
+        },
+        {
+          "label": "2天",
+          "value": "2天"
+        },
+        {
+          "label": "1天",
+          "value": "1天"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "preferences.daysPerWeek",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 7,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "xiaohongshu-008",
+      "section": "教育信息",
+      "label": "最高学历",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育信息",
+      "options": [
+        {
+          "label": "本科",
+          "value": "本科"
+        },
+        {
+          "label": "硕士",
+          "value": "硕士"
+        },
+        {
+          "label": "博士",
+          "value": "博士"
+        },
+        {
+          "label": "专科",
+          "value": "专科"
+        },
+        {
+          "label": "高中",
+          "value": "高中"
+        },
+        {
+          "label": "MBA",
+          "value": "MBA"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "custom.highestDegree",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 8,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "xiaohongshu-009",
+      "section": "教育信息",
+      "label": "学校名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "custom.highestSchool",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 9,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "最高学历对应学校，不能固定选择education[0]"
+    },
+    {
+      "id": "xiaohongshu-010",
+      "section": "教育信息",
+      "label": "毕业时间",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "custom.highestGraduationDate",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/xiaohongshu.json",
+        "row": 10,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "最高学历毕业年月，YYYY-MM"
+    }
+  ]
+}

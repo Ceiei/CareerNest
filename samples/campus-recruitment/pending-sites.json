@@ -1,0 +1,24 @@
+[
+  {
+    "companyId": "baidu",
+    "company": "百度",
+    "entryUrl": "https://talent.baidu.com/jobs/",
+    "checkedAt": "2026-09-09",
+    "status": "page_unavailable",
+    "loginStatus": "not_verified",
+    "fieldCount": 0,
+    "reason": "官方首页短暂显示后变为 about:blank，重复访问仍如此，未取得简历表单。",
+    "nextAction": "待浏览器访问恢复后由官网登录入口继续；不能从通用模板推断字段。"
+  },
+  {
+    "companyId": "netease",
+    "company": "网易",
+    "entryUrl": "https://hr.163.com/",
+    "checkedAt": "2026-09-08",
+    "status": "access_blocked",
+    "loginStatus": "not_verified",
+    "fieldCount": 0,
+    "reason": "浏览器安全策略禁止访问招聘域名，未取得表单；未尝试绕过。",
+    "nextAction": "使用用户另行提供的匿名字段导出补充；当前自动采集不可继续。"
+  }
+]

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; frame-src blob:; object-src 'self' blob:; base-uri 'none'; form-action 'none'"><title>Career OS · 个人职业工作台</title><link rel="stylesheet" href="/workspace.css"></head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#">Career OS<span>个人职业资料</span></a>
+    <div class="mode-switch" role="group" aria-label="申请场景"><button data-mode="job" class="active">求职版</button><button data-mode="academic">学术版</button></div>
+    <nav aria-label="工作区"><button data-view="overview" class="active">总览 <span>01</span></button><button data-view="profile">我的资料 <span>02</span></button><button data-view="jobs">申请机会 <span>03</span></button><button data-view="artifacts">申请材料 <span>04</span></button><button data-view="connection">设置与备份 <span>05</span></button></nav>
+    <div class="sidebar-note">在这里维护一次。<br>插件只负责填写。<p id="connection-status">正在读取资料…</p></div>
+  </aside>
+  <main>
+    <header class="topbar"><span id="breadcrumb">WORKSPACE / OVERVIEW</span><button id="refresh" class="quiet">重新读取</button></header>
+    <section class="hero"><div><p class="eyebrow">YOUR CAREER, ONE SOURCE.</p><h1 id="page-title">让每一段经历都有据可循。</h1><p id="page-intro">维护真实的自己，为下一次机会选择合适的表达。</p></div><span id="mode-badge" class="tag">校招与实习</span></section>
+    <section id="overview" class="view active">
+      <div class="stats"><article><span>经历记录</span><strong id="count-records">—</strong><small>两个版本共用</small></article><article><span>可引用事实</span><strong id="count-facts">—</strong><small>附来源与表达上限</small></article><article><span>申请机会</span><strong id="count-jobs">—</strong><small>每个岗位单独准备</small></article><article><span>材料版本</span><strong id="count-artifacts">—</strong><small>可回溯至生成时的事实</small></article></div>
+      <div class="start-grid"><article class="surface"><p class="eyebrow">01 / MAINTAIN</p><h2>先把经历留下来。</h2><p>个人信息与经历统一维护。每段经历可以补充动作、结果、技术和支撑证据。</p><button data-go="profile">维护我的资料 →</button></article><article class="surface"><p class="eyebrow">02 / PREPARE</p><h2>为具体机会准备。</h2><p>保存岗位或夏令营要求，选择相关经历，生成材料。审阅后导出 PDF。</p><button data-go="jobs">准备一次申请 →</button></article></div>
+      <div class="surface flow-note"><h2>从事实到投递</h2><p>维护事实 <span>→</span> 保存要求 <span>→</span> 选择内容 <span>→</span> 审阅材料 <span>→</span> PDF 与网页填写</p><small>当前默认在本地选择、排序和摘录。改写内容需要人工核对；最终申请由你提交。</small></div>
+    </section>
+    <section id="connection" class="view">
+      <div class="surface"><h2>唯一资料库</h2><p>资料只在本应用维护，保存在这台电脑中。关闭应用不会删除数据。</p><code id="data-directory"></code><div class="actions"><button id="open-data">在访达中打开数据目录</button><button id="backup">导出完整 JSON 备份</button></div><p class="hint">JSON 包含资料和材料历史；完整文件备份还需保留数据目录中的附件与 PDF。</p></div>
+      <div class="surface"><h2>连接 Chrome 填写插件</h2><p>生成配对码，在插件的“连接设置”中输入一次。插件只能读取资料，不能修改此资料库。</p><button id="generate-pair">生成配对码</button><output id="pair-output"></output><button id="copy-pair" hidden>复制配对码</button><p class="hint">配对码 5 分钟内有效，仅可使用一次。关闭桌面应用后插件暂停读取。</p></div>
+      <div class="surface"><h2>首次导入</h2><p>空资料库可以导入旧个人资料 JSON。旧插件配对后，也会把尚未迁移的资料送到此处等待你确认。</p><label class="file-label">选择个人资料 JSON<input id="import-profile" type="file" accept=".json"></label><button id="check-legacy">检查旧插件资料</button><div id="legacy-preview"></div></div>
+    </section>
+    <section id="profile" class="view"><div class="surface"><div class="section-head"><h2>共用资料</h2><span class="tag" id="profile-version">未连接</span></div><p class="hint">教育、项目、论文等全部共用，切换场景不会复制或清空事实。修改后请保存；版本冲突会阻止覆盖。</p><form id="profile-form"><div id="profile-fields" class="form-grid"></div><div id="basic-extra"></div><div id="record-fields"></div><button class="primary">保存真实资料</button></form></div></section>
+    <section id="facts"><details class="surface" id="fact-composer"><summary>补充经历细节与证据</summary><p class="hint">已有经历不需要重复填写。这里用于补充尚未记下的动作、结果或支撑证据。</p><form id="fact-form" class="form-grid">
+      <label>事实标题<input name="title" required maxlength="200"></label><label>关联经历<select name="record_id" id="fact-record"><option value="">独立事实</option></select></label>
+      <label class="full">事实陈述<textarea name="text" required rows="3" placeholder="做了什么、用了什么方法、取得什么真实结果"></textarea></label>
+      <label>业务／研究背景<textarea name="context" rows="2"></textarea></label><label>具体动作<textarea name="actions" rows="2"></textarea></label>
+      <label>结果与指标<textarea name="results" rows="2"></textarea></label><label>技术栈<input name="technologies" placeholder="用逗号分隔"></label>
+      <label>表达上限<select name="comfort"><option>仅了解</option><option>基础使用</option><option selected>可以展开讲</option><option>熟练掌握</option></select></label><label>证据链接<textarea name="evidence" rows="2" placeholder="每行一个 http(s) 链接"></textarea></label>
+      <button class="primary">确认并保存事实</button><button type="button" id="cancel-fact" hidden>取消编辑</button>
+    </form></details><div id="fact-list" class="item-list"></div></section>
+    <section id="jobs" class="view"><div class="surface"><h2 id="job-form-title">保存岗位要求</h2><form id="job-form" class="form-grid"><label>岗位／项目名称<input name="title" required maxlength="300"></label><label>公司／学校<input name="organization"></label><label class="full">官网链接<input name="url" type="url"></label><label class="full">岗位／申请要求<textarea name="description" rows="6" required placeholder="粘贴 JD 或夏令营申请要求"></textarea></label><button class="primary">保存并提取要求</button></form></div><div id="job-list" class="item-list"></div><div id="match-panel" class="surface" hidden></div></section>
+    <section id="artifacts" class="view"><div id="artifact-list" class="item-list"></div><div id="artifact-editor" class="surface" hidden></div></section>
+    <p id="notice" role="status" aria-live="polite"></p>
+  </main>
+  <script type="module" src="/workspace.js"></script>
+</body>
+</html>

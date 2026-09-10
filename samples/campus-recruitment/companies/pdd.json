@@ -1,0 +1,882 @@
+{
+  "schemaVersion": 1,
+  "scenario": "campus_recruitment",
+  "companyId": "pdd",
+  "company": "拼多多集团-PDD",
+  "capturedAt": "2026-09-08",
+  "entryUrl": "https://careers.pddglobalhr.com/campus",
+  "url": "https://careers.pddglobalhr.com/campus/personal-center/resume-detail",
+  "status": "observed_form",
+  "completeness": "partial",
+  "captureScope": "官网简历编辑页，去重保留每类经历一条；只读取元数据；未保存或提交",
+  "limitations": [
+    "未完整展开全部下拉枚举及条件分支",
+    "没有执行保存校验或实际自动填写"
+  ],
+  "platformEvidence": "rocket-dropdown；分区编辑和保存；已展开教育、语言、自评、社交账号",
+  "attachments": [
+    {
+      "label": "一寸证件照",
+      "formats": [
+        "png",
+        "jpg",
+        "jpeg"
+      ],
+      "maxSizeMB": 2,
+      "required": true
+    },
+    {
+      "label": "简历",
+      "formats": [
+        "doc",
+        "docx",
+        "pdf"
+      ],
+      "maxSizeMB": 10
+    },
+    {
+      "label": "作品",
+      "formats": [
+        "rar",
+        "zip"
+      ],
+      "maxSizeMB": 100
+    },
+    {
+      "label": "语言证书",
+      "formats": [
+        "jpeg",
+        "jpg",
+        "pdf"
+      ],
+      "maxSizeMB": 10,
+      "maxFiles": 3
+    }
+  ],
+  "fields": [
+    {
+      "id": "pdd-001",
+      "section": "基本信息",
+      "label": "姓名",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 200,
+      "expectedKey": "personal.fullName",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 1,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-002",
+      "section": "基本信息",
+      "label": "性别",
+      "kind": "radio",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [
+        {
+          "label": "男",
+          "value": "男"
+        },
+        {
+          "label": "女",
+          "value": "女"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "personal.gender",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 2,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-003",
+      "section": "基本信息",
+      "label": "民族",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "personal.ethnicGroup",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 3,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-004",
+      "section": "基本信息",
+      "label": "出生年月",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.birthDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 4,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "月份选择器，YYYY-MM"
+    },
+    {
+      "id": "pdd-005",
+      "section": "基本信息",
+      "label": "手机号码",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "personal.phone",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 5,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "disabled，绑定信息"
+    },
+    {
+      "id": "pdd-006",
+      "section": "基本信息",
+      "label": "证件类型",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.idType",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 6,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-007",
+      "section": "基本信息",
+      "label": "证件号码",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 50,
+      "expectedKey": "personal.idNumber",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 7,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-008",
+      "section": "基本信息",
+      "label": "毕业学校",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.highestSchool",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 8,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-009",
+      "section": "基本信息",
+      "label": "毕业学院",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 200,
+      "expectedKey": "custom.highestDepartment",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 9,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-010",
+      "section": "基本信息",
+      "label": "毕业学校专业",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "custom.highestMajor",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 10,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-011",
+      "section": "基本信息",
+      "label": "最高学历",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.highestDegree",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 11,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-012",
+      "section": "基本信息",
+      "label": "奖学金类型",
+      "kind": "combobox",
+      "required": false,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.scholarshipType",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 12,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-013",
+      "section": "基本信息",
+      "label": "邮箱",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 50,
+      "expectedKey": "personal.email",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 13,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-014",
+      "section": "基本信息",
+      "label": "微信号",
+      "kind": "text",
+      "required": false,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 30,
+      "expectedKey": "custom.wechat",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 14,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-015",
+      "section": "基本信息",
+      "label": "现家庭住址",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "personal.address",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 15,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "联动区域选择器，地址需拆分后选择"
+    },
+    {
+      "id": "pdd-016",
+      "section": "基本信息",
+      "label": "评奖评优/竞赛获奖",
+      "kind": "textarea",
+      "required": false,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 500,
+      "expectedKey": "custom.awardsSummary",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 16,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-017",
+      "section": "基本信息",
+      "label": "发表论文情况",
+      "kind": "textarea",
+      "required": false,
+      "occurrence": 0,
+      "context": "基本信息",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 500,
+      "expectedKey": "custom.publicationsSummary",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 17,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-018",
+      "section": "教育经历",
+      "label": "开始年月",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "education.0.startDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 18,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "月份选择器"
+    },
+    {
+      "id": "pdd-019",
+      "section": "教育经历",
+      "label": "毕业年月",
+      "kind": "date",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "expectedKey": "education.0.endDate",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 19,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": "月份选择器"
+    },
+    {
+      "id": "pdd-020",
+      "section": "教育经历",
+      "label": "学校名称",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "education.0.school",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 20,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-021",
+      "section": "教育经历",
+      "label": "学历",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "education.0.degree",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 21,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-022",
+      "section": "教育经历",
+      "label": "专业名称",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "education.0.major",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 22,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-023",
+      "section": "教育经历",
+      "label": "成绩排名",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "education.0.ranking",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 23,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-024",
+      "section": "教育经历",
+      "label": "学院",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "education.0.department",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 24,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-025",
+      "section": "教育经历",
+      "label": "实验室",
+      "kind": "text",
+      "required": false,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "education.0.laboratory",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 25,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-026",
+      "section": "教育经历",
+      "label": "学历类型",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "教育经历",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "education.0.enrollmentType",
+      "mappingStatus": "annotated",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 26,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-027",
+      "section": "语言能力",
+      "label": "是否掌握母语以外的其他语言能力",
+      "kind": "radio",
+      "required": false,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [
+        {
+          "label": "是",
+          "value": "是"
+        },
+        {
+          "label": "否",
+          "value": "否"
+        }
+      ],
+      "optionValueStatus": "label_only_not_dom_value",
+      "optionsStatus": "observed_labels",
+      "expectedKey": "custom.hasForeignLanguage",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 27,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-028",
+      "section": "语言能力",
+      "label": "语种",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_type",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 28,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-029",
+      "section": "语言能力",
+      "label": "等级自评",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_proficiency",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 29,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-030",
+      "section": "语言能力",
+      "label": "相关证书",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_exam",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 30,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-031",
+      "section": "语言能力",
+      "label": "笔译经验",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_translation",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 31,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-032",
+      "section": "语言能力",
+      "label": "口译经验",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_interpreting",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 32,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-033",
+      "section": "语言能力",
+      "label": "留学/生活经验",
+      "kind": "combobox",
+      "required": true,
+      "occurrence": 0,
+      "context": "语言能力",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_observed",
+      "expectedKey": "custom.language_0_overseasExperience",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 33,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-034",
+      "section": "自我评价",
+      "label": "自我评价",
+      "kind": "textarea",
+      "required": false,
+      "occurrence": 0,
+      "context": "自我评价",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 10000,
+      "expectedKey": "custom.selfDescription",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 34,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-035",
+      "section": "社交账号",
+      "label": "社交平台",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "社交账号",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 100,
+      "expectedKey": "custom.social_0_platform",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 35,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    },
+    {
+      "id": "pdd-036",
+      "section": "社交账号",
+      "label": "用户ID/URL",
+      "kind": "text",
+      "required": true,
+      "occurrence": 0,
+      "context": "社交账号",
+      "options": [],
+      "optionValueStatus": "not_observed",
+      "optionsStatus": "not_applicable",
+      "maxLength": 500,
+      "expectedKey": "custom.social_0_url",
+      "mappingStatus": "custom_proposed",
+      "answerable": true,
+      "requiresGeneration": false,
+      "evidence": {
+        "source": "evidence/pdd.json",
+        "row": 36,
+        "method": "live_dom_metadata_transcription"
+      },
+      "notes": ""
+    }
+  ]
+}

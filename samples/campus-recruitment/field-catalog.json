@@ -1,0 +1,3752 @@
+{
+  "schemaVersion": 1,
+  "purpose": "人工标注的资料路径目录；不含资料值，不是可导入的个人简历，也不证明自动填写成功",
+  "fields": [
+    {
+      "path": "awards.*.awardName",
+      "labels": [
+        "奖项名称",
+        "竞赛名称",
+        "荣誉名称",
+        "获奖名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-045"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-049"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-046"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-057"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-030"
+        }
+      ]
+    },
+    {
+      "path": "awards.*.date",
+      "labels": [
+        "竞赛获奖时间",
+        "获奖时间"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-044"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-045"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-051"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-058"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-029"
+        }
+      ]
+    },
+    {
+      "path": "awards.*.description",
+      "labels": [
+        "奖项说明",
+        "描述",
+        "荣誉描述",
+        "获奖情况"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-046"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-047"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-059"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-031"
+        }
+      ]
+    },
+    {
+      "path": "awards.*.level",
+      "labels": [
+        "竞赛获奖等级"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-050"
+        }
+      ]
+    },
+    {
+      "path": "awards.*.type",
+      "labels": [
+        "奖项类型",
+        "获奖类型"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-044"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-056"
+        }
+      ]
+    },
+    {
+      "path": "custom.age",
+      "labels": [
+        "年龄"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-004"
+        }
+      ]
+    },
+    {
+      "path": "custom.aiCollaboration",
+      "labels": [
+        "请描述一个或多个你与AI协作完成的项目或任务"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-061"
+        }
+      ]
+    },
+    {
+      "path": "custom.aiProjectUrl",
+      "labels": [
+        "相关项目或作品链接"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-062"
+        }
+      ]
+    },
+    {
+      "path": "custom.aiTools",
+      "labels": [
+        "请列出你常用的 AI 工具&模型"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-060"
+        }
+      ]
+    },
+    {
+      "path": "custom.awardsSummary",
+      "labels": [
+        "奖励与荣誉",
+        "评奖评优/竞赛获奖"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-034"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-016"
+        }
+      ]
+    },
+    {
+      "path": "custom.campus_0_description",
+      "labels": [
+        "校园经历描述",
+        "经历描述"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-038"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-045"
+        }
+      ]
+    },
+    {
+      "path": "custom.campus_0_endDate",
+      "labels": [
+        "结束时间",
+        "起止时间／结束"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-035"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-043"
+        }
+      ]
+    },
+    {
+      "path": "custom.campus_0_isCurrent",
+      "labels": [
+        "至今"
+      ],
+      "kinds": [
+        "checkbox"
+      ],
+      "sources": [
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-044"
+        }
+      ]
+    },
+    {
+      "path": "custom.campus_0_name",
+      "labels": [
+        "校园经历名称",
+        "活动名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-036"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-040"
+        }
+      ]
+    },
+    {
+      "path": "custom.campus_0_role",
+      "labels": [
+        "担任职务",
+        "角色"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-037"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-041"
+        }
+      ]
+    },
+    {
+      "path": "custom.campus_0_startDate",
+      "labels": [
+        "校园经历时间／开始时间",
+        "起止时间／开始"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-034"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-042"
+        }
+      ]
+    },
+    {
+      "path": "custom.certificate_0_description",
+      "labels": [
+        "描述"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-040"
+        }
+      ]
+    },
+    {
+      "path": "custom.certificate_0_name",
+      "labels": [
+        "技能证书",
+        "证书名称"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-039"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-048"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-048"
+        }
+      ]
+    },
+    {
+      "path": "custom.competition_0_description",
+      "labels": [
+        "描述"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-038"
+        }
+      ]
+    },
+    {
+      "path": "custom.competition_0_name",
+      "labels": [
+        "竞赛名称",
+        "获奖大赛"
+      ],
+      "kinds": [
+        "combobox",
+        "custom"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-037"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-054"
+        }
+      ]
+    },
+    {
+      "path": "custom.competitionSummary",
+      "labels": [
+        "大赛经历"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-033"
+        }
+      ]
+    },
+    {
+      "path": "custom.currentCity",
+      "labels": [
+        "当前居住城市",
+        "当前所处地",
+        "所在地",
+        "所在地点",
+        "所在城市",
+        "现居地"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-004"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-007"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-009"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-010"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-008"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-008"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-005"
+        }
+      ]
+    },
+    {
+      "path": "custom.game_0_achievements",
+      "labels": [
+        "游戏成就"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-053"
+        }
+      ]
+    },
+    {
+      "path": "custom.game_0_category",
+      "labels": [
+        "游戏品类"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-050"
+        }
+      ]
+    },
+    {
+      "path": "custom.game_0_duration",
+      "labels": [
+        "游戏时长"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-052"
+        }
+      ]
+    },
+    {
+      "path": "custom.game_0_name",
+      "labels": [
+        "游戏名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-051"
+        }
+      ]
+    },
+    {
+      "path": "custom.gameCategories",
+      "labels": [
+        "请选择你玩过的所有游戏品类"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-049"
+        }
+      ]
+    },
+    {
+      "path": "custom.gameExperience",
+      "labels": [
+        "其他经验"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-054"
+        }
+      ]
+    },
+    {
+      "path": "custom.github",
+      "labels": [
+        "GitHub URL/ID",
+        "Github"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-022"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-033"
+        }
+      ]
+    },
+    {
+      "path": "custom.hasForeignLanguage",
+      "labels": [
+        "是否掌握母语以外的其他语言能力"
+      ],
+      "kinds": [
+        "radio"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-027"
+        }
+      ]
+    },
+    {
+      "path": "custom.highestDegree",
+      "labels": [
+        "最高学历"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-006"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-012"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-011"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-008"
+        }
+      ]
+    },
+    {
+      "path": "custom.highestDepartment",
+      "labels": [
+        "毕业学院"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-009"
+        }
+      ]
+    },
+    {
+      "path": "custom.highestGraduationDate",
+      "labels": [
+        "最高学历毕业日期",
+        "毕业时间"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-015"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-010"
+        }
+      ]
+    },
+    {
+      "path": "custom.highestMajor",
+      "labels": [
+        "最高学历专业",
+        "毕业学校专业"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-014"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-010"
+        }
+      ]
+    },
+    {
+      "path": "custom.highestSchool",
+      "labels": [
+        "学校名称",
+        "最高学历学校",
+        "毕业学校"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-013"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-008"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-009"
+        }
+      ]
+    },
+    {
+      "path": "custom.hobbies",
+      "labels": [
+        "兴趣爱好"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-014"
+        }
+      ]
+    },
+    {
+      "path": "custom.homeCity",
+      "labels": [
+        "家庭所在城市"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-006"
+        }
+      ]
+    },
+    {
+      "path": "custom.homepage",
+      "labels": [
+        "个人主页链接"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-065"
+        }
+      ]
+    },
+    {
+      "path": "custom.homeTown",
+      "labels": [
+        "家乡"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-008"
+        }
+      ]
+    },
+    {
+      "path": "custom.honor_0_name",
+      "labels": [
+        "荣誉名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-052"
+        }
+      ]
+    },
+    {
+      "path": "custom.idType",
+      "labels": [
+        "个人证件／类型",
+        "证件类型"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-005"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-009"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-010"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-006"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-006"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-006"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-006"
+        }
+      ]
+    },
+    {
+      "path": "custom.itSkill_0_proficiency",
+      "labels": [
+        "掌握程度"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-047"
+        }
+      ]
+    },
+    {
+      "path": "custom.itSkill_0_type",
+      "labels": [
+        "技能类别"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-046"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_exam",
+      "labels": [
+        "相关证书",
+        "语言考试"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-023"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-030"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_interpreting",
+      "labels": [
+        "口译经验"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-032"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_overseasExperience",
+      "labels": [
+        "留学/生活经验"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-033"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_proficiency",
+      "labels": [
+        "掌握程度",
+        "等级自评",
+        "精通程度",
+        "语言水平",
+        "语言级别"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-026"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-031"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-042"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-040"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-022"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-029"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-033"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_score",
+      "labels": [
+        "外语考试分数",
+        "考试分数"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-024"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-063"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_speaking",
+      "labels": [
+        "听说",
+        "听说能力"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-041"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-044"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_translation",
+      "labels": [
+        "笔译经验"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-031"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_type",
+      "labels": [
+        "语种",
+        "语言",
+        "语言类别",
+        "语言类型"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-025"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-030"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-041"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-039"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-043"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-021"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-028"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-032"
+        }
+      ]
+    },
+    {
+      "path": "custom.language_0_writing",
+      "labels": [
+        "读写",
+        "读写能力"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-042"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-045"
+        }
+      ]
+    },
+    {
+      "path": "custom.latestCompany",
+      "labels": [
+        "最近公司"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-008"
+        }
+      ]
+    },
+    {
+      "path": "custom.noAwards",
+      "labels": [
+        "无获奖信息"
+      ],
+      "kinds": [
+        "checkbox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-055"
+        }
+      ]
+    },
+    {
+      "path": "custom.noInternship",
+      "labels": [
+        "无实习经历",
+        "没有实习经历"
+      ],
+      "kinds": [
+        "checkbox"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-018"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-035"
+        }
+      ]
+    },
+    {
+      "path": "custom.noProjects",
+      "labels": [
+        "无项目经历"
+      ],
+      "kinds": [
+        "checkbox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-042"
+        }
+      ]
+    },
+    {
+      "path": "custom.paper_0_count",
+      "labels": [
+        "论文发表篇数"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-024"
+        }
+      ]
+    },
+    {
+      "path": "custom.paper_0_tier",
+      "labels": [
+        "论文发表等级"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-023"
+        }
+      ]
+    },
+    {
+      "path": "custom.patent_0_date",
+      "labels": [
+        "登记日期"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-055"
+        }
+      ]
+    },
+    {
+      "path": "custom.patent_0_description",
+      "labels": [
+        "成果描述"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-057"
+        }
+      ]
+    },
+    {
+      "path": "custom.patent_0_name",
+      "labels": [
+        "成果名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-053"
+        }
+      ]
+    },
+    {
+      "path": "custom.patent_0_number",
+      "labels": [
+        "登记号"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-054"
+        }
+      ]
+    },
+    {
+      "path": "custom.patent_0_rank",
+      "labels": [
+        "发明人排名"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-056"
+        }
+      ]
+    },
+    {
+      "path": "custom.patent_0_type",
+      "labels": [
+        "成果类型"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-052"
+        }
+      ]
+    },
+    {
+      "path": "custom.phoneCountryCode",
+      "labels": [
+        "手机区号",
+        "手机号码／国家区号"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-006"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-004"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-002"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-003"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-005"
+        }
+      ]
+    },
+    {
+      "path": "custom.portfolio_0_description",
+      "labels": [
+        "描述"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-036"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-028"
+        }
+      ]
+    },
+    {
+      "path": "custom.portfolio_0_name",
+      "labels": [
+        "作品名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-053"
+        }
+      ]
+    },
+    {
+      "path": "custom.portfolio_0_url",
+      "labels": [
+        "作品链接"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-035"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-054"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-027"
+        }
+      ]
+    },
+    {
+      "path": "custom.portfolioLinks",
+      "labels": [
+        "作品链接"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-032"
+        }
+      ]
+    },
+    {
+      "path": "custom.programmingLanguages",
+      "labels": [
+        "开发语言"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-064"
+        }
+      ]
+    },
+    {
+      "path": "custom.publicationsSummary",
+      "labels": [
+        "发表论文情况"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-017"
+        }
+      ]
+    },
+    {
+      "path": "custom.qq",
+      "labels": [
+        "QQ号"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-010"
+        }
+      ]
+    },
+    {
+      "path": "custom.recruitmentSource",
+      "labels": [
+        "招聘信息来源"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-036"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-001"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-011"
+        }
+      ]
+    },
+    {
+      "path": "custom.referenceName",
+      "labels": [
+        "以上资料证明人"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-066"
+        }
+      ]
+    },
+    {
+      "path": "custom.referencePhone",
+      "labels": [
+        "联系电话"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-068"
+        }
+      ]
+    },
+    {
+      "path": "custom.referenceRelation",
+      "labels": [
+        "证明人身份"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-067"
+        }
+      ]
+    },
+    {
+      "path": "custom.researchArea",
+      "labels": [
+        "研究方向"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-021"
+        }
+      ]
+    },
+    {
+      "path": "custom.scholarshipType",
+      "labels": [
+        "奖学金类型"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-012"
+        }
+      ]
+    },
+    {
+      "path": "custom.schoolCity",
+      "labels": [
+        "学校所在城市"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-007"
+        }
+      ]
+    },
+    {
+      "path": "custom.selfDescription",
+      "labels": [
+        "其他信息",
+        "自我描述",
+        "自我评价",
+        "补充信息"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-035"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-010"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-043"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-043"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-034"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-069"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-034"
+        }
+      ]
+    },
+    {
+      "path": "custom.skill_0_type",
+      "labels": [
+        "技能类型"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-058"
+        }
+      ]
+    },
+    {
+      "path": "custom.social_0_platform",
+      "labels": [
+        "社交平台"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-044"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-035"
+        }
+      ]
+    },
+    {
+      "path": "custom.social_0_url",
+      "labels": [
+        "URL / ID",
+        "用户ID/URL"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-045"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-036"
+        }
+      ]
+    },
+    {
+      "path": "custom.wechat",
+      "labels": [
+        "微信号"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-013"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-014"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-009"
+        }
+      ]
+    },
+    {
+      "path": "custom.workYears",
+      "labels": [
+        "工作经验"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-005"
+        }
+      ]
+    },
+    {
+      "path": "education.*.advisor",
+      "labels": [
+        "导师",
+        "导师姓名"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-018"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-027"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-026"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-019"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-031"
+        }
+      ]
+    },
+    {
+      "path": "education.*.city",
+      "labels": [
+        "目前就读地"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-023"
+        }
+      ]
+    },
+    {
+      "path": "education.*.college",
+      "labels": [
+        "学院"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-013"
+        }
+      ]
+    },
+    {
+      "path": "education.*.degree",
+      "labels": [
+        "学历",
+        "学历层次"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-008"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-015"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-012"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-025"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-021"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-018"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-012"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-021"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-021"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-013"
+        }
+      ]
+    },
+    {
+      "path": "education.*.department",
+      "labels": [
+        "学院",
+        "学院名称",
+        "所在院系",
+        "院系"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-014"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-018"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-022"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-010"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-024"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-026"
+        }
+      ]
+    },
+    {
+      "path": "education.*.doubleDegree",
+      "labels": [
+        "是否双学位"
+      ],
+      "kinds": [
+        "radio"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-024"
+        }
+      ]
+    },
+    {
+      "path": "education.*.endDate",
+      "labels": [
+        "就读时间／结束",
+        "时间／结束日期",
+        "毕业年月",
+        "毕业时间",
+        "起止时间／结束"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-010"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-013"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-009"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-022"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-016"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-020"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-014"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-019"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-025"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-011"
+        }
+      ]
+    },
+    {
+      "path": "education.*.enrollmentType",
+      "labels": [
+        "学习形式",
+        "学历类型",
+        "是否全日制"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-016"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-010"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-022"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-016"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-026"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-014"
+        }
+      ]
+    },
+    {
+      "path": "education.*.exchangeStudent",
+      "labels": [
+        "该学历是否为交换生"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-020"
+        }
+      ]
+    },
+    {
+      "path": "education.*.gpa",
+      "labels": [
+        "GPA-GPA",
+        "GPA成绩"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-019"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-029"
+        }
+      ]
+    },
+    {
+      "path": "education.*.gpaScale",
+      "labels": [
+        "GPA-BASE"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-030"
+        }
+      ]
+    },
+    {
+      "path": "education.*.isHighest",
+      "labels": [
+        "是否最高学历"
+      ],
+      "kinds": [
+        "radio"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-023"
+        }
+      ]
+    },
+    {
+      "path": "education.*.laboratory",
+      "labels": [
+        "实验室",
+        "实验室名称"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-017"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-015"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-026"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-025"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-018"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-025"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-032"
+        }
+      ]
+    },
+    {
+      "path": "education.*.laboratoryType",
+      "labels": [
+        "实验室类型"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-017"
+        }
+      ]
+    },
+    {
+      "path": "education.*.major",
+      "labels": [
+        "专业",
+        "专业名称"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-015"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-014"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-014"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-024"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-020"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-023"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-011"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-022"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-027"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-015"
+        }
+      ]
+    },
+    {
+      "path": "education.*.majorCategory",
+      "labels": [
+        "专业类别"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-019"
+        }
+      ]
+    },
+    {
+      "path": "education.*.nationalScholarship",
+      "labels": [
+        "是否获得国家奖学金"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-012"
+        }
+      ]
+    },
+    {
+      "path": "education.*.papers",
+      "labels": [
+        "论文"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-034"
+        }
+      ]
+    },
+    {
+      "path": "education.*.ranking",
+      "labels": [
+        "专业成绩排名",
+        "成绩排名"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-025"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-024"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-015"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-023"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-028"
+        }
+      ]
+    },
+    {
+      "path": "education.*.recommendedAdmission",
+      "labels": [
+        "该学历是否保送"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-011"
+        }
+      ]
+    },
+    {
+      "path": "education.*.researchArea",
+      "labels": [
+        "领域方向"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-016"
+        }
+      ]
+    },
+    {
+      "path": "education.*.researchTopic",
+      "labels": [
+        "研究方向"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-028"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-020"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-033"
+        }
+      ]
+    },
+    {
+      "path": "education.*.school",
+      "labels": [
+        "学校",
+        "学校全称",
+        "学校名称"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-013"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-011"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-011"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-023"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-017"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-021"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-009"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-020"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-022"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-012"
+        }
+      ]
+    },
+    {
+      "path": "education.*.startDate",
+      "labels": [
+        "在校时间／入学时间",
+        "就读时间／开始",
+        "开始年月",
+        "时间／开始日期",
+        "起止时间／开始"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-009"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-012"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-008"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-021"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-015"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-019"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-013"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-018"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-024"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-010"
+        }
+      ]
+    },
+    {
+      "path": "education.*.studentId",
+      "labels": [
+        "学号"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-016"
+        }
+      ]
+    },
+    {
+      "path": "education.*.supervisor",
+      "labels": [
+        "导师"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-017"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.achievements",
+      "labels": [
+        "工作业绩"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-032"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.company",
+      "labels": [
+        "公司",
+        "公司名称",
+        "公司或组织名称"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-027"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-017"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-019"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-024"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-018"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-029"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-031"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-029"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-025"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-036"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-018"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.department",
+      "labels": [
+        "部门名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-026"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.endDate",
+      "labels": [
+        "时间／结束日期",
+        "结束时间",
+        "起止时间／结束"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-029"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-019"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-022"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-027"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-016"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-027"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-030"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-028"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-030"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-039"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-017"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.isCurrent",
+      "labels": [
+        "至今"
+      ],
+      "kinds": [
+        "checkbox",
+        "custom"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-030"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-020"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-017"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-028"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-031"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-040"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.position",
+      "labels": [
+        "职位",
+        "职位名称",
+        "职位或职责"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-031"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-021"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-020"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-025"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-019"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-030"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-032"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-030"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-027"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-037"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-019"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.responsibilities",
+      "labels": [
+        "工作描述",
+        "工作职责",
+        "描述",
+        "职责描述"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-032"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-022"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-023"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-028"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-020"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-031"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-033"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-031"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-032"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-041"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-020"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.startDate",
+      "labels": [
+        "在职时间／开始时间",
+        "时间／开始日期",
+        "起止时间／开始"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-028"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-018"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-021"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-026"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-015"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-026"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-029"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-027"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-029"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-038"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-016"
+        }
+      ]
+    },
+    {
+      "path": "experience.*.workType",
+      "labels": [
+        "工作类型"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-028"
+        }
+      ]
+    },
+    {
+      "path": "personal.address",
+      "labels": [
+        "现家庭住址"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-015"
+        }
+      ]
+    },
+    {
+      "path": "personal.birthDate",
+      "labels": [
+        "出生年月",
+        "出生日期",
+        "出生日期 (年龄)"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-003"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-011"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-012"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-009"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-004"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-002"
+        }
+      ]
+    },
+    {
+      "path": "personal.email",
+      "labels": [
+        "电子邮箱",
+        "邮箱",
+        "邮箱地址"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-005"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-008"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-003"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-003"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-005"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-004"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-005"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-013"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-007"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-004"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-002"
+        }
+      ]
+    },
+    {
+      "path": "personal.emergencyContact",
+      "labels": [
+        "紧急联系人"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-016"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-011"
+        }
+      ]
+    },
+    {
+      "path": "personal.emergencyPhone",
+      "labels": [
+        "紧急联系人电话"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-017"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-012"
+        }
+      ]
+    },
+    {
+      "path": "personal.ethnicGroup",
+      "labels": [
+        "民族"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-008"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-003"
+        }
+      ]
+    },
+    {
+      "path": "personal.fullName",
+      "labels": [
+        "姓名"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-001"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-001"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-001"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-001"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-002"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-001"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-001"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-001"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-001"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-001"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-001"
+        }
+      ]
+    },
+    {
+      "path": "personal.gender",
+      "labels": [
+        "性别"
+      ],
+      "kinds": [
+        "combobox",
+        "radio"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-002"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-004"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-003"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-008"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-002"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-002"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-002"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-003"
+        }
+      ]
+    },
+    {
+      "path": "personal.idNumber",
+      "labels": [
+        "个人证件",
+        "个人证件／号码",
+        "证件号码",
+        "身份证件",
+        "身份证号"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-003"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-006"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-010"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-011"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-007"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-007"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-007"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-004"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-007"
+        }
+      ]
+    },
+    {
+      "path": "personal.nationality",
+      "labels": [
+        "国家/地区",
+        "国家地区"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-002"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-006"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-005"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-003"
+        }
+      ]
+    },
+    {
+      "path": "personal.nativePlace",
+      "labels": [
+        "籍贯"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-005"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-007"
+        }
+      ]
+    },
+    {
+      "path": "personal.phone",
+      "labels": [
+        "手机",
+        "手机号",
+        "手机号码"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "alibaba",
+          "fieldId": "alibaba-004"
+        },
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-007"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-002"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-002"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-004"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-003"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-004"
+        },
+        {
+          "companyId": "pdd",
+          "fieldId": "pdd-005"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-006"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-003"
+        }
+      ]
+    },
+    {
+      "path": "preferences.acceptOtherCities",
+      "labels": [
+        "除上述选择外，是否还接受其他城市分配"
+      ],
+      "kinds": [
+        "radio"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-014"
+        }
+      ]
+    },
+    {
+      "path": "preferences.availability",
+      "labels": [
+        "到岗时间"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-005"
+        }
+      ]
+    },
+    {
+      "path": "preferences.availableDate",
+      "labels": [
+        "最早可入职时间"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-018"
+        }
+      ]
+    },
+    {
+      "path": "preferences.businessGroup",
+      "labels": [
+        "感兴趣的事业群"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-015"
+        }
+      ]
+    },
+    {
+      "path": "preferences.currentSalary",
+      "labels": [
+        "当前薪资"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-012"
+        }
+      ]
+    },
+    {
+      "path": "preferences.daysPerWeek",
+      "labels": [
+        "每周出勤",
+        "每周可出勤天数"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-020"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-007"
+        }
+      ]
+    },
+    {
+      "path": "preferences.department",
+      "labels": [
+        "感兴趣的部门"
+      ],
+      "kinds": [
+        "radio"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-016"
+        }
+      ]
+    },
+    {
+      "path": "preferences.expectedSalary",
+      "labels": [
+        "期望薪资"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-013"
+        }
+      ]
+    },
+    {
+      "path": "preferences.internshipDuration",
+      "labels": [
+        "实习时长"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-019"
+        },
+        {
+          "companyId": "xiaohongshu",
+          "fieldId": "xiaohongshu-006"
+        }
+      ]
+    },
+    {
+      "path": "preferences.interviewCity",
+      "labels": [
+        "参加面试城市"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-017"
+        }
+      ]
+    },
+    {
+      "path": "preferences.workCity",
+      "labels": [
+        "期望城市",
+        "期望工作地点",
+        "期望工作城市"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-007"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-014"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-013"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-009"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.description",
+      "labels": [
+        "描述",
+        "项目描述"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-028"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-034"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-037"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-043"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-038"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-039"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-048"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-026"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.endDate",
+      "labels": [
+        "结束时间",
+        "起止时间／结束"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-025"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-032"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-033"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-040"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-034"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-036"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-046"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-022"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.isCurrent",
+      "labels": [
+        "至今"
+      ],
+      "kinds": [
+        "checkbox"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-026"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-034"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-037"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-047"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.projectName",
+      "labels": [
+        "项目名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-023"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-029"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-035"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-041"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-035"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-033"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-043"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-023"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.responsibilities",
+      "labels": [
+        "项目中职责",
+        "项目职责"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "didi",
+          "fieldId": "didi-038"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-037"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.role",
+      "labels": [
+        "在项目中担任的角色",
+        "担任角色",
+        "职务",
+        "职责",
+        "项目角色"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-027"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-030"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-036"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-042"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-036"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-034"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-044"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-024"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.startDate",
+      "labels": [
+        "起止时间／开始",
+        "项目时间／开始时间"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-024"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-031"
+        },
+        {
+          "companyId": "didi",
+          "fieldId": "didi-032"
+        },
+        {
+          "companyId": "jd",
+          "fieldId": "jd-039"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-033"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-035"
+        },
+        {
+          "companyId": "tencent",
+          "fieldId": "tencent-045"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-021"
+        }
+      ]
+    },
+    {
+      "path": "projects.*.url",
+      "labels": [
+        "项目链接"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "bilibili",
+          "fieldId": "bilibili-029"
+        },
+        {
+          "companyId": "bytedance",
+          "fieldId": "bytedance-033"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-038"
+        },
+        {
+          "companyId": "xiaomi",
+          "fieldId": "xiaomi-025"
+        }
+      ]
+    },
+    {
+      "path": "publications.*.date",
+      "labels": [
+        "发表时间"
+      ],
+      "kinds": [
+        "date"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-049"
+        }
+      ]
+    },
+    {
+      "path": "publications.*.description",
+      "labels": [
+        "论文详情"
+      ],
+      "kinds": [
+        "textarea"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-051"
+        }
+      ]
+    },
+    {
+      "path": "publications.*.impactFactor",
+      "labels": [
+        "影响因子"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-052"
+        }
+      ]
+    },
+    {
+      "path": "publications.*.role",
+      "labels": [
+        "作者顺序"
+      ],
+      "kinds": [
+        "combobox"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-048"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-041"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-051"
+        }
+      ]
+    },
+    {
+      "path": "publications.*.title",
+      "labels": [
+        "论文名称"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-047"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-039"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-049"
+        }
+      ]
+    },
+    {
+      "path": "publications.*.url",
+      "labels": [
+        "论文链接"
+      ],
+      "kinds": [
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-042"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-053"
+        }
+      ]
+    },
+    {
+      "path": "publications.*.venue",
+      "labels": [
+        "刊物/机构",
+        "发布渠道",
+        "发表渠道"
+      ],
+      "kinds": [
+        "combobox",
+        "text"
+      ],
+      "sources": [
+        {
+          "companyId": "jd",
+          "fieldId": "jd-050"
+        },
+        {
+          "companyId": "kuaishou",
+          "fieldId": "kuaishou-040"
+        },
+        {
+          "companyId": "meituan",
+          "fieldId": "meituan-050"
+        }
+      ]
+    }
+  ]
+}

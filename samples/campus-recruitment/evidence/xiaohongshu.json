@@ -1,0 +1,160 @@
+{
+  "companyId": "xiaohongshu",
+  "company": "小红书",
+  "capturedAt": "2026-09-09",
+  "entryUrl": "https://job.xiaohongshu.com/campus",
+  "url": "https://job.xiaohongshu.com/campus/position/21212/apply",
+  "status": "observed_form",
+  "completeness": "partial",
+  "captureScope": "用户打开的1327 Agent实习生岗位申请表；已附简历后的联系、补充、教育信息阶段；未点击提交",
+  "limitations": [
+    "这是实习岗位的具体申请表，不代表2027正式校招、REDstar或其他岗位全部分支",
+    "仅采集表单元数据，不保存已上传简历名称、预览或填写值",
+    "未操作重新上传，不知道初始简历上传阶段的全部约束"
+  ],
+  "rows": [
+    [
+      "联系信息",
+      "姓名",
+      "text",
+      true,
+      "personal.fullName",
+      100,
+      "",
+      []
+    ],
+    [
+      "联系信息",
+      "出生年月",
+      "date",
+      true,
+      "personal.birthDate",
+      null,
+      "YYYY-MM，需从完整出生日期提取年月",
+      []
+    ],
+    [
+      "联系信息",
+      "手机号",
+      "text",
+      true,
+      "personal.phone",
+      100,
+      "disabled，已绑定账号只读",
+      []
+    ],
+    [
+      "联系信息",
+      "邮箱",
+      "text",
+      true,
+      "personal.email",
+      100,
+      "",
+      []
+    ],
+    [
+      "补充信息",
+      "到岗时间",
+      "combobox",
+      true,
+      "preferences.availability",
+      null,
+      "",
+      [
+        "1周内",
+        "2周内",
+        "1个月内",
+        "3个月内"
+      ]
+    ],
+    [
+      "补充信息",
+      "实习时长",
+      "combobox",
+      true,
+      "preferences.internshipDuration",
+      null,
+      "",
+      [
+        "3个月以内",
+        "3-6个月",
+        "6个月以上"
+      ]
+    ],
+    [
+      "补充信息",
+      "每周出勤",
+      "combobox",
+      true,
+      "preferences.daysPerWeek",
+      null,
+      "",
+      [
+        "5天",
+        "4天",
+        "3天",
+        "2天",
+        "1天"
+      ]
+    ],
+    [
+      "教育信息",
+      "最高学历",
+      "combobox",
+      true,
+      "custom.highestDegree",
+      null,
+      "",
+      [
+        "本科",
+        "硕士",
+        "博士",
+        "专科",
+        "高中",
+        "MBA"
+      ]
+    ],
+    [
+      "教育信息",
+      "学校名称",
+      "text",
+      true,
+      "custom.highestSchool",
+      100,
+      "最高学历对应学校，不能固定选择education[0]",
+      []
+    ],
+    [
+      "教育信息",
+      "毕业时间",
+      "date",
+      true,
+      "custom.highestGraduationDate",
+      null,
+      "最高学历毕业年月，YYYY-MM",
+      []
+    ]
+  ],
+  "readOnlyFields": [
+    "手机号和国家地区选择为disabled"
+  ],
+  "attachments": [
+    {
+      "label": "作品或其他附件",
+      "required": false,
+      "maxSizeMB": 200,
+      "formats": [
+        "zip",
+        "rar",
+        "pdf",
+        "doc",
+        "docx",
+        "ppt",
+        "png",
+        "jpg",
+        "jpeg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+\documentclass[UTF8,11pt,fontset=fandol]{ctexart}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\pagestyle{plain}
+\begin{document}
+{\LARGE\bfseries ((( personal.get('fullName', '') | tex )))}
+
+((( personal.get('email', '') | tex )))\quad ((( personal.get('phone', '') | tex )))
+
+\vspace{3mm}\hrule\vspace{3mm}
+((* for bullet in artifact.bullets *))
+\subsection*{((( artifact.sources[bullet.source_facts[0]].title | tex )))}
+((( bullet.text | tex )))
+((* endfor *))
+\end{document}

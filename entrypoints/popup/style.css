@@ -1,0 +1,41 @@
+:root { font-family: Inter, "PingFang SC", system-ui, sans-serif; color: #17211b; background: #f5f8f6; font-size: 13px; }
+* { box-sizing: border-box; }
+body { margin: 0; width: 560px; min-height: 260px; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 15px 18px; background: #fff; border-bottom: 1px solid #dce6df; }
+header div { display: flex; flex-direction: column; gap: 2px; }
+header strong { font-size: 16px; }
+.header-tools, .mode-switch { display: flex; align-items: center; gap: 6px; }
+.mode-switch { background: #edf3ef; padding: 3px; border-radius: 8px; }
+.mode-switch button { border: 0; background: transparent; color: #577064; padding: 5px 8px; border-radius: 6px; cursor: pointer; }
+.mode-switch button.active { color: #fff; background: #176b43; }
+small { color: #648071; }
+main { padding: 16px; }
+p { color: #52665a; line-height: 1.55; }
+.primary, .ghost, .icon-button { border: 0; border-radius: 8px; padding: 9px 14px; font-weight: 600; cursor: pointer; }
+.primary { background: #176b43; color: #fff; }
+.primary:disabled { opacity: .45; }
+.ghost, .icon-button { background: #e9f0eb; color: #28523d; }
+#open-options { padding: 7px 9px; }
+.summary, .actions { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.actions { position: sticky; bottom: 0; padding-top: 12px; background: #f5f8f6; }
+.field-row { display: grid; grid-template-columns: 22px minmax(120px, 1fr) 190px auto; gap: 8px; align-items: center; background: #fff; border: 1px solid #dce6df; border-radius: 9px; padding: 9px; margin: 8px 0; }
+.field-row.existing { opacity: .58; }
+.field-label { min-width: 0; }
+.field-label strong { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.field-label small { display: block; margin-top: 3px; line-height: 1.35; }
+.field-row select { width: 100%; padding: 7px; border: 1px solid #c8d5cd; border-radius: 6px; background: #fff; }
+.row-tools { display: flex; flex-direction: column; gap: 4px; }
+.icon-button { padding: 5px 7px; font-size: 11px; white-space: nowrap; }
+#status { min-height: 20px; margin-bottom: 0; color: #9b3f22; }
+.ok { color: #176b43 !important; }
+/* Career OS: shared warm-white and slate-blue visual language. */
+:root{color:#242d38;background:#f7f7f4}
+.primary,.mode-switch button.active{background:#42668c}
+.ghost,.icon-button{background:#eef3f8;color:#42668c}
+.actions{background:#f7f7f4}
+#welcome{display:flex;flex-wrap:wrap;gap:8px}
+#welcome p{width:100%}
+#welcome[hidden]{display:none}
+#jd-preview label{display:flex;flex-direction:column;gap:6px;margin:12px 0;color:#526173}
+#jd-preview input,#jd-preview textarea{width:100%;font:inherit;line-height:1.6;padding:9px;border:1px solid #ccd5df;border-radius:7px}
+#ready-materials{margin:18px 0;padding:16px;border:1px solid #dce3ea;border-radius:10px;background:#f5f7fa}#ready-materials[hidden]{display:none}#ready-materials h3{margin-top:0}#ready-materials p{font-size:12px;line-height:1.6}#ready-materials label{display:grid;gap:8px;margin-bottom:12px}#ready-materials select{width:100%;padding:8px}
