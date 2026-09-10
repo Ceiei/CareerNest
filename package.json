@@ -19,13 +19,16 @@
     "compile": "tsc --noEmit",
     "test": "vitest run"
   },
-  "engines": { "node": ">=22.13.0" },
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "dependencies": {
     "mammoth": "^1.12.2",
     "pdfjs-dist": "^6.3.289",
     "wxt": "^0.21.4"
   },
   "devDependencies": {
+    "@types/node": "22.15.21",
     "electron": "44.3.0",
     "jsdom": "^26.1.0",
     "typescript": "^5.8.3",
